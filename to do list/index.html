@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- TOP PANEL -->
+  <div class="topFrame">
+    <h1>⚡ TASK TERMINAL</h1>
+
+    <div class="inputArea">
+      <input type="text" id="taskInput" placeholder="Enter new task...">
+      <input type="date" id="taskDate">
+      <input type="time" id="taskTime">
+      <button onclick="addTask()">+ ADD TASK</button>
+    </div>
+
+    <div class="infoBar">
+      <span id="totalTasks">0 tasks</span>
+      <span id="pendingTasks">0 pending</span>
+      <span id="completedTasks">0 done</span>
+    </div>
+  </div>
+
+  <!-- TASK LIST -->
+  <div class="bottomFrame">
+    <ul id="taskList"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
